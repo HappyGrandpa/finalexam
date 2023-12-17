@@ -22,48 +22,75 @@
         <a href="#">購物車</a>
     </nav>
 
-    <p>--- 全部商品 ---</p>
+
+    <div class="slideshow">
+      <img class="mySlides" src="image/玫瑰蛋糕.gif">
+      <img class="mySlides" src="image/巧克力蛋糕.jpg">
+      <img class="mySlides" src="image/馬卡龍蛋糕.jpg">
+      <!-- 添加更多圖片 -->
+    </div>
+
+    <script>
+      // JavaScript
+      let slideIndex = 0;
+      const slides = document.getElementsByClassName("mySlides");
+  
+      function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1; }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // 切換圖片的時間間隔（這裡設定為2秒）
+      }
+  
+      showSlides(); // 啟動圖片輪播
+    </script>
+
+    <div>---------------------------- 全部商品 ----------------------------</div>
 
     <main>
         <section class="card">
-          <h2>標題1</h2>
+          <p>cake1</p>
           <img src="https://picsum.photos/300/200?random=1" />
         </section>
   
         <section class="card">
-          <h2>標題2</h2>
+          <p>cake2</p>
           <img src="https://picsum.photos/300/200?random=2" />
         </section>
 
         <section class="card">
-          <h2>標題3</h2>
+          <p>cake3</p>
           <img src="https://picsum.photos/300/200?random=3" />
         </section>
   
         <section class="card">
-          <h2>標題4</h2>
+          <p>cake4</p>
           <img src="https://picsum.photos/300/200?random=4" />
         </section>
 
         <section class="card">
-          <h2>標題5</h2>
+          <p>cake5</p>
           <img src="https://picsum.photos/300/200?random=5" />
         </section>
   
         <section class="card">
-          <h2>標題6</h2>
+          <p>cake6</p>
           <img src="https://picsum.photos/300/200?random=6" />
         </section>
   
         <aside class="card">
-          <h2 class="text01">聯絡資訊</h2>
+          <p>聯絡資訊</p>
           <img src="https://picsum.photos/200/200?random" style="border-radius: 50%;"/>
-          <p class="text01">Some text about me in culpa qui officia deserunt mollit anim..</p>
+          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
         </aside>
+
       </main>
 
       <footer>
-        <h5>@2023 多媒體</h5>
+        <h5>@2023 多媒體 Final Exam</h5>
       </footer>
 </body>
 </html>
