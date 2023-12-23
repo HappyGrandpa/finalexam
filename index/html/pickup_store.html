@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>取件門市</title>
-  <link rel="stylesheet" href="/css/pickup.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>取件門市</title>
+    <link rel="stylesheet" href="/css/pickup.css">
 </head>
 <body>
-  <form action="#" method="post" id="pickupStoreForm">
-    <label for="store">選擇取件門市:</label>
-    <select id="store" name="store" required>
-      <option value="store1">門市1</option>
-      <option value="store2">門市2</option>
-      <option value="store3">門市3</option>
-    </select>
+    <div class="tit">取件門市<hr></div>
+      <form action="#" method="post" id="Pickup_Store_Form">
+        <label for="Pickup_name">取件人姓名：</label>
+        <input type="text" id="Pickup_name" name="Pickup_name" required>
+    
+        <label for="phone">電話號碼：</label>
+        <input type="text" id="phone" name="phone" required>
 
-    <button type="submit">確定取件</button>
-  </form>
+        <label for="Receiving_method">收貨方式：</label>
+        <select name="4" id="Receiving_method">
+          <option value="7-11">7-11店到店$60</option>
+          <option value="familymart">全家店到店$60</option>
+          <option value="post_office">郵局宅配$100</option>
+          <option value="no">免運</option>
+        </select>
+        
+        <label for="7-11_store">7-11店到店 店名+店號(沒有則填無)：</label>
+        <a href="https://emap.pcsc.com.tw/" target="_blank">門市查詢</a>
+        <input type="text" id="7-11_store" name="7-11_store" required>
+
+        <label for="7-11_store">全家店到店 服務代號(沒有則填無)：</label>
+        <a href="https://family.map.com.tw/ShopSpaceQuery/ShopSpaceQuery.asp" target="_blank">門市查詢</a>
+        <input type="text" id="7-11_store" name="7-11_store" required>
+
+        <label for="Home_delivery">宅配地址(沒有則填無)：</label>
+        <input type="text" id="Home_delivery" name="Home_delivery" required>
+    
+        <button type="submit">完成</button>
+      </form>  
+    </div>
+      <footer>
+        <h5>@2023 多媒體 Final Exam</h5>
+      </footer>  
 </body>
 </html>

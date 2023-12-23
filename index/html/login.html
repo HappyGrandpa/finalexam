@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>會員登入</title>
+    <title>登入</title>
     <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
-    <form action="#" method="post" id="loginForm">
-        <label for="username">使用者名稱或電子郵件:</label>
+    <div class="tit">會員登入<hr></div>
+      <form action="#" method="post" id="LoginForm">
+        <label for="username">電子郵件 or 手機：</label>
         <input type="text" id="username" name="username" required>
     
-        <label for="password">密碼:</label>
+        <label for="password">密碼：</label>
         <input type="password" id="password" name="password" required>
     
         <button type="submit">登入</button>
         <button type="submit"><a href="/html/sign_up.html">註冊</a></button>
-      </form>    
+      </form>  
+    </div>
+      <footer>
+        <h5>@2023 多媒體 Final Exam</h5>
+      </footer>  
 </body>
 </html>
