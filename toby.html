@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    
+    <form action="/action_page.php" class="checkout-form">
+        <h1>結帳</h1>
+    
+        <div class="container">
+            <h3>訂單詳情</h3>
+            <img src="https://picsum.photos/200/200?random" alt="商品照片">
+            <div class="order-details">
+                <span class="price" style="color:black"></span>
+                <div class="product">
+                    <span class="price" style="color:black"></span>
+                    <p>商品名稱  <span class="price">$</span></p>
+                    <hr>
+                    <p>總數量:</p>
+                    <p>總金額: <span class="price" style="color:black"><b>$</b></span></p>
+                </div>
+            </div>
+    
+            <h3>購買者資料</h3>
+            <label for="fname">姓名</label>
+            <input type="text" name="firstname" placeholder="Full Name"><br>
+    
+            <label for="phone">連絡電話</label>
+            <input type="text"  name="phonenumber" placeholder="Phone Number"><br>
+    
+            <label for="email">電子郵件</label>
+            <input type="text" name="email" placeholder="Email"><br>
+    
+            <div class="horizontal-options">
+                <label for="wayttodelivery">取貨方式</label>
+                <a href="#" class="delivery-link" data-method="711">7-11</a>
+                <a href="#" class="delivery-link" data-method="familymart">全家</a>
+            </div>
+    
+            <div class="horizontal-options">
+                <label for="waytopay">付款方式</label>
+                <input type="radio" name="pay" value="cash" id="cash">
+                <label for="cash">貨到付款</label>
+    
+                <input type="radio" name="pay" value="card" id="card">
+                <label for="card">信用卡</label>
+            </div>
+        </div>
+    </form>
+    
+    
+        
+    
+      
+</body>
+</html>

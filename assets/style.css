@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    /* Arrange elements from top to bottom */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    /* Set the body width to 100% */
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    /* Adjust the form width as needed */
+    max-width: 600px;
+    /* Add a max-width for responsiveness */
+}
+
+.delivery-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    /* Adjust as needed */
+}
+
+.delivery-link {
+    margin: 0 10px;
+    /* Adjust as needed */
+    cursor: pointer;
+}
+
+/* Add any additional styling for your form elements here */
