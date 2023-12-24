@@ -28,9 +28,9 @@ form {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+}
 
-
-    .delivery-link {
-        margin: 0 10px;
-        cursor: pointer;
-    }
+.delivery-link {
+    margin: 0 10px;
+    cursor: pointer;
+}
