@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信用卡資訊</title>
+</head>
+<body>
+    <h2>卡片詳情(貨到付款則無需填寫)</h2>
+
+<form action="/process-payment" method="post" enctype="multipart/form-data">
+
+    <label for="card-number">信用卡號碼：</label>
+    <input type="text" id="card-number" name="card-number" required>
+
+    <label for="date">到期日(MM/YY)：</label>
+    <input type="text" id="expiration-date" name="date" placeholder="MM/YY" required>
+
+    <label for="code">安全驗證碼：</label>
+    <input type="text" id="code" name="code" required>
+
+    <label for="cardholder-name">持卡人姓名：</label>
+    <input type="text" id="cardholder-name" name="cardholder-name" required>
+    
+    <input type="submit" value="提交支付">
+</form>
+</body>
+</html>
