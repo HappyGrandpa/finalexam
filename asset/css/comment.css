@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    max-width: 1256px;
+    margin: auto;
+}
+
+body {
+    background-color: #F5EBE0;
+    margin: 0px;
+    font-family: Noto Serif TC;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+}
+
+.logo {
+    height: 150px;
+    margin: 0%;
+}
+
+nav {
+    background-color: #D6CCC2;
+    text-align: right;
+    font-family: Noto Serif TC;
+}
+
+nav a {
+    color: black;
+    padding: 20px 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.tit {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    /* 調整上方間距 */
+}
+
+.rating {
+    font-size: 36px;
+    /* 調整星星大小 */
+}
+
+.star {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+button {
+    background-color: #D6CCC2;
+    color: black;
+    font-family: Noto Serif TC;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 565px;
+    width: 400px;
+    height: 50px;
+}

@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    max-width: 1024px;
+    max-width: 1256px;
     margin: auto;
 }
 
@@ -14,8 +14,9 @@ header {
     background-color: white;
 }
 
-img {
-    height: 100px;
+.logo {
+    height: 150px;
+    margin: 0%;
 }
 
 nav {
@@ -40,6 +41,24 @@ div {
     font-size: 40px;
     padding: 40px;
     font-family: Noto Serif TC;
+}
+
+.tit {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
+    font-weight: bold;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.icon {
+    max-width: 50%;
+    height: auto;
 }
 
 footer {
@@ -68,10 +87,22 @@ main {
     text-align: center;
 }
 
+.card01 {
+    background-color: white;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 aside {
     text-align: left;
     display: grid;
-    grid-row: 3/4;
+    grid-row: 4/5;
     grid-column: 1/4;
 }
 
@@ -83,7 +114,7 @@ p {
 
 .slideshow {
     position: relative;
-    max-width: 80%;
+    max-width: 60%;
 }
 
 .mySlides {

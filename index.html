@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>出事了阿杯</title>
+    <link rel="stylesheet" href="asset/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -13,20 +13,25 @@
 <body>
 
     <header>
-        <img src="image/nike.jpg" alt="">
+        <img class="logo" src="asset/image/logo.png" alt="">
     </header>
     
     <nav>
+        <a href="index.html">首頁</a>
+        /
         <a href="#">登入</a>
         /
-        <a href="#">購物車</a>
+        <a href="cart.html">購物車</a>
+        /
+        <a href="comment.html">回饋區</a>
     </nav>
 
-
+    <div class="tit">熱門商品<hr></div>
+    
     <div class="slideshow">
-      <img class="mySlides" src="image/玫瑰蛋糕.gif">
-      <img class="mySlides" src="image/巧克力蛋糕.jpg">
-      <img class="mySlides" src="image/馬卡龍蛋糕.jpg">
+      <a href="ecocup.html"><img class="mySlides" src="asset/image/ecocup.webp"></a>
+      <a href="glasscup.html"><img class="mySlides" src="asset/image/glasscup.webp"></a>
+      <a href="cartooncup.html"><img class="mySlides" src="asset/image/cartooncup.webp"></a>
       <!-- 添加更多圖片 -->
     </div>
 
@@ -48,46 +53,52 @@
       showSlides(); // 啟動圖片輪播
     </script>
 
-    <div>---------------------------- 全部商品 ----------------------------</div>
+    <div class="tit">全部商品<hr></div>
 
     <main>
         <section class="card">
-          <p>cake1</p>
-          <img src="https://picsum.photos/300/200?random=1" />
+          <p>環保杯</p>
+          <a href="ecocup.html"><img src="asset/image/ecocup.webp" /></a>
         </section>
   
         <section class="card">
-          <p>cake2</p>
-          <img src="https://picsum.photos/300/200?random=2" />
+          <p>冰壩杯</p>
+          <a href="icecup.html"><img src="asset/image/icecup.jpg" /></a>
         </section>
 
         <section class="card">
-          <p>cake3</p>
-          <img src="https://picsum.photos/300/200?random=3" />
+          <p>透明杯</p>
+          <a href="glasscup.html"><img src="asset/image/glasscup.webp" /></a>
         </section>
   
         <section class="card">
-          <p>cake4</p>
-          <img src="https://picsum.photos/300/200?random=4" />
+          <p>不鏽鋼</p>
+          <a href="metalcup.html"><img src="asset/image/metalcup.png" /></a>
         </section>
 
         <section class="card">
-          <p>cake5</p>
-          <img src="https://picsum.photos/300/200?random=5" />
+          <p>卡通圖案杯</p>
+          <a href="cartooncup.html"><img src="asset/image/cartooncup.webp" /></a>
         </section>
   
         <section class="card">
-          <p>cake6</p>
-          <img src="https://picsum.photos/300/200?random=6" />
+          <p>提袋</p>
+          <a href="bag.html"><img src="asset/image/bag.webp" /></a>
         </section>
-  
-        <aside class="card">
-          <p>聯絡資訊</p>
-          <img src="https://picsum.photos/200/200?random" style="border-radius: 50%;"/>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-        </aside>
-
       </main>
+
+      <section class="card01">
+        <p>聯絡資訊</p>
+        <img class="icon" src="asset/image/line.png" alt="">
+        <img class="icon" src="asset/image/facebook.png" alt="">
+        <img class="icon" src="asset/image/instagram.png" alt="">
+      </section>
+
+      <aside class="card">
+        <p>關於我們</p>
+        <img src="https://picsum.photos/200/200?random" style="border-radius: 50%;"/>
+        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      </aside>
 
       <footer>
         <h5>@2023 多媒體 Final Exam</h5>

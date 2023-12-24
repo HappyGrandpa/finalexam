@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>回饋區</title>
+    <link rel="stylesheet" href="asset/css/comment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="asset/image/logo.png" alt="">
+    </header>
+    
+    <nav>
+        <a href="index.html">首頁</a>
+        /
+        <a href="#">登入</a>
+        /
+        <a href="cart.html">購物車</a>
+        /
+        <a href="comment.html">回饋區</a>
+    </nav>
+
+    <div class="tit">回饋區<hr></div>
+
+    <div class="container">
+        <div class="rating">
+            <span class="star" data-rating="1">&#9733;</span>
+            <span class="star" data-rating="2">&#9733;</span>
+            <span class="star" data-rating="3">&#9733;</span>
+            <span class="star" data-rating="4">&#9733;</span>
+            <span class="star" data-rating="5">&#9733;</span>
+        </div>
+        <textarea id="comment" rows="15" cols="50" placeholder="寫下你的評論..."></textarea>
+    </div>
+    <button id="submit">送出</button>
+    
+    <script>
+        const stars = document.querySelectorAll('.star');
+        const commentBox = document.getElementById('comment');
+        const submitBtn = document.getElementById('submit');
+    
+        let rating = 0;
+    
+        // 星星點擊
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                rating = parseInt(star.getAttribute('data-rating'));
+                highlightStars(rating);
+            });
+        });
+    
+        // 選中的星星
+        function highlightStars(rating) {
+            stars.forEach(star => {
+                if (parseInt(star.getAttribute('data-rating')) <= rating) {
+                    star.style.color = 'gold';
+                } else {
+                    star.style.color = 'black';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
