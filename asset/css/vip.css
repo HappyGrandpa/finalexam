@@ -4,11 +4,6 @@
     margin: auto;
 }
 
-body {
-    background-color: #F5EBE0;
-    margin: 0px;
-}
-
 header {
     text-align: center;
     background-color: white;
@@ -36,37 +31,53 @@ nav a:hover {
     color: white;
 }
 
-.product {
-    border: 1px solid gray;
+body {
     font-family: Noto Serif TC;
-    padding: 30px;
-    text-align: left;
-    background-color: white;
-    max-width: 550px;
+    background-color: #F5EBE0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+main {
+    padding: 20px;
 }
 
-.name {
-    margin: 5px 0;
+section {
+    margin-bottom: 30px;
 }
 
-.price {
-    margin: 5px 0;
-    font-weight: bold;
+h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
 }
 
 button {
-    background-color: #D6CCC2;
+    background-color: #D5BDAF;
     color: black;
-    padding: 2%;
+    padding: 10px;
+    margin-top: 10px;
+    width: 20%;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .tit {
@@ -76,25 +87,6 @@ button {
     font-weight: bold;
 }
 
-.review {
-    border: 1px solid gray;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: whitesmoke;
-}
-
-.rating {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.stars {
-    color: rgb(239, 239, 0);
-}
-
-.comment {
-    font-size: 100%;
-}
 
 footer {
     background-color: #D6CCC2;

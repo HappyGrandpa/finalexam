@@ -4,11 +4,6 @@
     margin: auto;
 }
 
-body {
-    background-color: #F5EBE0;
-    margin: 0px;
-}
-
 header {
     text-align: center;
     background-color: white;
@@ -36,37 +31,14 @@ nav a:hover {
     color: white;
 }
 
-.product {
-    border: 1px solid gray;
+body {
     font-family: Noto Serif TC;
-    padding: 30px;
-    text-align: left;
-    background-color: white;
-    max-width: 550px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.name {
-    margin: 5px 0;
-}
-
-.price {
-    margin: 5px 0;
-    font-weight: bold;
-}
-
-button {
-    background-color: #D6CCC2;
-    color: black;
-    padding: 2%;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    background-color: #F5EBE0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .tit {
@@ -74,6 +46,11 @@ button {
     font-size: 30px;
     margin: 30px;
     font-weight: bold;
+}
+
+img {
+    width: 10%;
+    height: 10%;
 }
 
 .review {
