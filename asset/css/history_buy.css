@@ -45,6 +45,8 @@ main {
     font-size: 30px;
     margin: 30px;
     font-weight: bold;
+    font-family: Noto Serif TC;
+
 }
 
 section {
@@ -61,6 +63,7 @@ td {
     border: 1px solid lightgray;
     padding: 8px;
     text-align: left;
+    font-family: Noto Serif TC;
 }
 
 th {
